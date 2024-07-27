@@ -1,10 +1,10 @@
 import Logo from "./../images/resizedLogo.png";
 
-export default function Navbar() {
+export default function Navbar(arg) {
   return (
     <>
-      <nav>
-        <div className="flex justify-between items-center px-10 py-3 bg-navcolor text-white">
+      <nav className="border-text_color ">
+        <div className="flex fixed w-full z-50 justify-between items-center px-10 py-3 bg-navcolor text-white">
           <div className="capitalise">
             <a href="" className="flex justify-between items-center ">
               <img src={Logo} alt="VM" className="w-10 h-10 rounded-full " />
@@ -41,6 +41,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
+        <div className="overflow-y-auto">{arg.children}</div>
       </nav>
     </>
   );

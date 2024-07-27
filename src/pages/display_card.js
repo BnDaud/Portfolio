@@ -8,8 +8,8 @@ import {
 
 export default function Display_card() {
   return (
-    <div className="flex h-screen justify-center items-center">
-      <div className="flex justify-between gap-8 items-center  py-10 px-20 w-3/5 h-3/5 bg-navcolor rounded-lg text-white font-sans">
+    <div className="flex h-screen justify-center items-center bg-navcolor ">
+      <div className="flex justify-between gap-8 items-center  py-10 px-20 w-3/5 h-3/5 bg-navcolor rounded-lg text-white font-sans shadow-xl shadow-text_color/50">
         <div className="capitalize  w-full p-2">
           {" "}
           <p>Assalam Aleikum, it's Me</p>
@@ -21,8 +21,8 @@ export default function Display_card() {
               fullstack developer
             </span>
           </p>
-          <p>with a passion for robotics and engineering.</p>
-          <div className="flex mt-3 justify-center gap-4">
+          <p>with a passion for robotics ,ai Ml and engineering.</p>
+          <div className="flex mt-3 gap-4">
             <a href="">
               {" "}
               <TiSocialFacebookCircular className="text-3xl text-text_color" />
@@ -36,10 +36,12 @@ export default function Display_card() {
             </a>
           </div>
           <div>
-            <button className="capitalize mt-5 bg-text_color px-3 rounded-full">
-              {" "}
-              download CV
-            </button>
+            <a href="/VM_Resume.pdf" download={"VM_Resume.pdf"}>
+              <button className="shadow-lg shadow-text_color/50 capitalize mt-5 bg-text_color px-3 rounded-full">
+                {" "}
+                download CV
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-full h-full ">
@@ -47,7 +49,7 @@ export default function Display_card() {
           <img
             src={official}
             alt="Lawal Sulaimon"
-            className="w-[300px] h-[300px] rounded-full"
+            className="w-[300px] h-[300px] rounded-full shadow-lg shadow-text_color/50"
           />
         </div>
       </div>
