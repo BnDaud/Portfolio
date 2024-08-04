@@ -8,8 +8,8 @@ import {
 
 export default function Display_card() {
   return (
-    <div className="flex h-screen justify-center items-center bg-navcolor ">
-      <div className="flex justify-between gap-8 items-center  py-10 px-20 w-3/5 h-3/5 bg-navcolor rounded-lg text-white font-sans shadow-xl shadow-new_bg/50">
+    <div className="flex h-height justify-center items-center bg-navcolor ">
+      <div className="flex justify-between gap-8 items-center  py-10 px-20 w-3/5 h-2/3 bg-navcolor rounded-lg text-white font-sans shadow-lg shadow-new_bg/50">
         <div className="capitalize  w-full p-2">
           {" "}
           <p>Assalam Aleikum, it's Me</p>
@@ -37,7 +37,7 @@ export default function Display_card() {
           </div>
           <div>
             <a href="/VM_Resume.pdf" download={"VM_Resume.pdf"}>
-              <button className="shadow-lg shadow-new_bg/50 capitalize mt-5 bg-new_bg px-3 rounded-full">
+              <button className="shadow-lg shadow-new_bg/50 capitalize mt-5 bg-new_bg p-1 px-5 rounded-full">
                 {" "}
                 download CV
               </button>

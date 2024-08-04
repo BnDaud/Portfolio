@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Navbar>
           <Routes>
-            <Route path="/home" element={<Display_card />} />
+            <Route path="/" element={<Display_card />} />
             <Route path={"/about"} element={<About />} />
             <Route path="/createcv" element={<Cvpage />} />
           </Routes>
