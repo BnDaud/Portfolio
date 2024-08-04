@@ -1,6 +1,15 @@
+import { NavLink } from "react-router-dom";
 import Logo from "./../images/resizedLogo.png";
 
 export default function Navbar(arg) {
+  const navigation = [
+    { name: "Home", href: "/home" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "About", href: "/about" },
+    { name: "Skills", href: "/skills" },
+
+    { name: "Create Cv", href: "/createcv" },
+  ];
   return (
     <>
       <nav className="border-text_color ">
@@ -14,31 +23,23 @@ export default function Navbar(arg) {
               </div>
             </a>
           </div>
-          <div className="mr-20">
-            <ul className="flex justify-center gap-6 list-none text-new_bg font-serif ">
-              <li className="hover:text-white hover:italic hover:bg-new_bg rounded-lg px-2 ">
-                <a href="#"> Home </a>
-              </li>
-
-              <li className="hover:text-white hover:italic hover:bg-new_bg rounded-lg px-2 ">
-                {" "}
-                <a href="#"> About </a>
-              </li>
-
-              <li className="hover:text-white hover:italic hover:bg-new_bg rounded-lg px-2 ">
-                {" "}
-                <a href="#"> Skills </a>
-              </li>
-
-              <li className="hover:text-white hover:italic hover:bg-new_bg rounded-lg px-2 ">
-                {" "}
-                <a href="#">Portfolio </a>
-              </li>
-
-              <li className="hover:text-white hover:italic hover:bg-new_bg rounded-lg px-2 ">
-                <a href="#"> Create CV</a>
-              </li>
-            </ul>
+          <div className="flex justify-center gap-6 list-none text-new_bg font-serif mr-20">
+            {navigation.map((item) => {
+              return (
+                <NavLink
+                  key={item.name}
+                  to={item.href}
+                  className={({ isActive }) =>
+                    isActive
+                      ? " text-white  bg-new_bg rounded-lg px-2 "
+                      : "hover:italic hover:text-white"
+                  }
+                >
+                  {console.log(item.name)}
+                  {item.name}
+                </NavLink>
+              );
+            })}
           </div>
         </div>
         <div className="overflow-y-auto mb-5 ">{arg.children}</div>
