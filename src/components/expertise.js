@@ -1,11 +1,11 @@
 export default function Expertise() {
   return (
-    <>
-      <p className="capitalize text-xl  text-new_bg font-bold font-serif mb-3">
+    <div className="text-new_bg font-serif">
+      <p className="capitalize text-xl  text-new_bg font-bold mb-3">
         {" "}
         Expertise
       </p>
-      <div className="font-serif overflow-auto h-[calc(100vh-12rem)]">
+      <div className=" overflow-auto h-[calc(100vh-12rem)]">
         <p className="text-white mt-5 capitalize">
           As a Full-Stack Developer, I specialize in creating seamless web
           applications using modern technologies. My toolkit includes:
@@ -14,7 +14,7 @@ export default function Expertise() {
           <ul className="list-disc list-inside mt-5">
             <li className="font-bold mb-5">
               Frontend :{" "}
-              <span className="font-normal text-white">
+              <span className="font-normal  text-white">
                 React, Tailwind CSS, HTML5, CSS3, JavaScript
               </span>
             </li>
@@ -62,6 +62,6 @@ export default function Expertise() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -3,7 +3,9 @@ import React from "react";
 export default function Intro() {
   return (
     <div className="font-serif">
-      <p className="font-bold capitalize text-xl mb-5">Introduction</p>
+      <p className="font-bold capitalize text-xl mb-5 text-new_bg ">
+        Introduction
+      </p>
       <p className="font-bold capitalize text-xl text-white">
         Assalam Aleikum,{" "}
         <span className="text-new_bg text-3xl">I'm Lawal Sulaimon</span>

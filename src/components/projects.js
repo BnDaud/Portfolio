@@ -2,8 +2,11 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <>
-      <p className="font-bold capitalize text-xl mb-5 font-serif"> Projects</p>
+    <div>
+      <p className="font-bold capitalize text-xl mb-5 font-serif text-new_bg">
+        {" "}
+        Projects
+      </p>
       <div className="flex h-[calc(100vh-12rem)] overflow-auto">
         <ul className="list-inside list-disc capitalize font-serif">
           <li className="mb-5 text-xl font-bold">
@@ -70,6 +73,6 @@ export default function Projects() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
